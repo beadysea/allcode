@@ -1,0 +1,45 @@
+# Allcode API
+
+The Allcode API is a python library of methods used to control Matrix Tsl allcode devices over a bluetooth serial connection. Based on the original formula allcode api provded by Matrix Tsl, this library has been redesigned from the ground up.
+
+* Automatic detection of available serial port
+* Improved separation of responsibilities
+
+## Hardware Requirements
+
+<img src="https://www.matrixtsl.com/allcode/images/main-robot-4.png" width=200px>
+
+The current version of the api requires a [Formula Allcode](https://www.matrixtsl.com/allcode/formula/) robot buggy available from Matrix Tsl.
+
+## Using the Allcode API
+
+Basic Allcode Buggy functions example
+
+```Python
+import time
+from allcode import buggy, serial_comms
+
+car = buggy.Buggy(serial_comms.SerialDevice)
+car.forwards(500)
+car.left(30)
+car.backwards(300)
+car.right(60)
+car.set_motors(100,-100)
+time.sleep(2)
+car.set_motors(0,0)
+```
+
+The buggy has several peripheral devices, each of which is now an object.
+
+```Python
+import time
+from allcode import buggy, serial_comms
+
+car = buggy.Buggy(serial_comms.SerialDevice)
+# switching all 7 leds on
+car.leds.write(255)
+# switching led 5 off
+car.leds.off(5)
+# switching all leds off
+car.leds.write(0)
+```

@@ -1,0 +1,12 @@
+# Editable install with no version control (allcode==2.0.0)
+-e c:\users\beads\onedrive\documents\programs\allcode
+autopep8==1.7.0
+build==0.8.0
+colorama==0.4.5
+packaging==21.3
+pep517==0.13.0
+pycodestyle==2.9.1
+pyparsing==3.0.9
+pyserial==3.5
+toml==0.10.2
+tomli==2.0.1
