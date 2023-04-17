@@ -7,7 +7,7 @@ The Allcode API is a python library of methods used to control Matrix Tsl allcod
 
 ## Hardware Requirements
 
-![Picture of a Formula Allcode robot][bot]{width=200}
+![Picture of a Formula Allcode robot][bot]
 
 The current version of the api requires a [Formula Allcode](https://www.matrixtsl.com/allcode/formula/) robot buggy available from Matrix Tsl.
 
