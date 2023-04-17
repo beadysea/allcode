@@ -1,5 +1,4 @@
-from allcode import buggy
-from allcode import serial_comms
+from allcode import buggy, serial_comms
 
 
 def main():
